@@ -7,7 +7,9 @@ const path = require("path");
 
 const app = express();
 
-app.set("view engine", "pug");
+// app.engine("handlebars", engine());
+// app.set("view engine", "handlebars");
+app.set("view engine", "ejs");
 app.set("views", "views");
 
 app.use(bodyParser.urlencoded({ extended: true }));
